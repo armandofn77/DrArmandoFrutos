@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Dr. Armando Frutos Nava - Especialista</title>
-    <meta name="description" content="Dr. Armando Frutos Nava, especialista en medicina y salud. Bienvenido a nuestro sitio." />
+    <meta name="description" content="Dr. Armando Frutos Nava, especialista en Rehabilitación Oral con más de 30 años de experiencia. Fabricamos dentaduras cómodas y seguras. Ubicado en Puebla, México." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="doctor, médico, salud, especialista" />
+    <meta name="keywords" content="dentista Puebla, prótesis dental, dentaduras, rehabilitación oral, odontólogo especialista, dentaduras cómodas, reparación de prótesis" />
 
     <meta property="og:title" content="Dr. Armando Frutos Nava - Especialista" />
-    <meta property="og:description" content="Dr. Armando Frutos Nava, especialista en medicina y salud." />
+    <meta property="og:description" content="Dr. Armando Frutos Nava, Dentista Especialista." />
     <meta property="og:url" content="https://drarmandofrutosnava.com" />
     <meta property="og:type" content="website" />
 
@@ -23,7 +23,31 @@
     <link rel="stylesheet" href="assets/css/lindy-uikit.css"/>
     <link rel="stylesheet" href="assets/css/custom.css"/>
 
-    <!-- Google tag (gtag.js) -->
+    
+    <script type="application/ld+json">
+			{
+			"@context": "http://schema.org",
+			"@type": "Dentist",
+			"name": "Dr. Armando Frutos Nava",
+			"image": "https://drarmandofrutosnava.com/assets/img/logo/logo-3.png",
+			"telephone": "2229103354",
+			"email": "armandofn77@gmail.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Privada Tikal 4902 Col. Reforma Agua Azul.",
+				"addressLocality": "Puebla",
+				"addressRegion": "Pue",
+				"addressCountry": "MX"
+			},
+			"url": "https://drarmandofrutosnava.com/",
+			"areaServed": "Puebla, México",
+			"medicalSpecialty": "Dentistry",
+			"description": "Dr. Armando Frutos Nava, especialista en Rehabilitación Oral con más de 30 años de experiencia. Fabricamos dentaduras cómodas y seguras. Ubicado en Puebla, México."
+			}
+		</script>
+
+
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18079706030"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
@@ -31,7 +55,24 @@
         gtag('js', new Date());
 
         gtag('config', 'AW-18079706030');
-      </script>
+    </script>
+
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18079706030/kaywCLvapZwcEK7Xia1D',
+            'event_callback': callback
+        });
+        return (typeof url !== 'undefined' && url);
+      }
+    </script>
+
+    
   </head>
 
   <body>
@@ -357,7 +398,7 @@
               </div>
               <h4>WhatsApp</h4>
               <p>
-                <a href="https://wa.me/2229103354" target="_blank">2229103354</a>
+                <a href="https://wa.me/2229103354" onclick="gtag_report_conversion();" target="_blank">2229103354</a>
               </p>
             </div>
           </div>
@@ -453,7 +494,7 @@
           <div class="row">
             <div class="col-md-6 text-center mb-3 mb-md-0">
               <p>Cirujano Dentista. Cedula Profesional Licenciatura: 641633</p>
-              <p>Especialista en medicina y salud</p>
+              <p>Dentista Especialista</p>
             </div>
             <div class="col-md-6 text-center">
               <p>&copy; 2026 Dr. Armando Frutos nava. Todos los derechos reservados.</p>
