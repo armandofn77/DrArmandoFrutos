@@ -94,3 +94,45 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Página cargada');
 });
+
+// ===== Gallery Carousel =====
+(function () {
+  const track = document.getElementById('galleryTrack');
+  if (!track) return;
+  const slides = track.children;
+  const total = slides.length;
+  let current = 0;
+  const dotsEl = document.getElementById('galleryDots');
+  const counterEl = document.getElementById('galleryCounter');
+
+  for (let i = 0; i < total; i++) {
+    const d = document.createElement('button');
+    d.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i + 1));
+    d.addEventListener('click', () => galleryGoTo(i));
+    dotsEl.appendChild(d);
+  }
+
+  function pauseAll() {
+    Array.from(slides).forEach(s => {
+      const v = s.querySelector('video');
+      if (v) v.pause();
+    });
+  }
+
+  window.galleryGoTo = function (n) {
+    pauseAll();
+    current = n;
+    track.style.transform = 'translateX(-' + current * 100 + '%)';
+    document.querySelectorAll('.gallery-dot').forEach((d, i) =>
+      d.classList.toggle('active', i === current)
+    );
+    counterEl.textContent = (current + 1) + ' / ' + total;
+  };
+
+  window.galleryMove = function (dir) {
+    galleryGoTo((current + dir + total) % total);
+  };
+
+  galleryGoTo(0);
+})();

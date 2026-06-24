@@ -320,6 +320,41 @@
               </div>
             </div>
           </div>
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="service-card service-card-6 service-card-odd wow fadeInUp" data-wow-delay=".7s">
+              <div class="service-image-circular-border">
+                <img src="assets/img/gallery/services/servicio-7.jpg" alt="Prótesis Fija">
+              </div>
+              <div class="service-content">
+                <h4>Prótesis Fija</h4>
+                <p>Coronas, incrustaciones y puentes que devuelven la estructura y resistencia de tus dientes, con materiales estéticos que se ven y se sienten naturales.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="service-card service-card-6 service-card-even wow fadeInUp" data-wow-delay=".8s">
+              <div class="service-image-circular-border">
+                <img src="assets/img/gallery/services/servicio-8.jpg" alt="Carillas Dentales">
+              </div>
+              <div class="service-content">
+                <h4>Carillas Dentales</h4>
+                <p>Mejoramos el color, la forma y el tamaño de tus dientes para que recuperes una sonrisa armoniosa y con apariencia completamente natural.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="service-card service-card-6 service-card-odd wow fadeInUp" data-wow-delay=".9s">
+              <div class="service-image-circular-border">
+                <img src="assets/img/gallery/services/servicio-9.jpeg" alt="Bruxismo">
+              </div>
+              <div class="service-content">
+                <h4>Tratamiento de Bruxismo</h4>
+                <p>¿Aprietas o rechinas los dientes sin darte cuenta? Protegemos tu dentadura del desgaste y aliviamos la tensión con una férula hecha a tu medida.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -334,35 +369,79 @@
             <p>Conoce más sobre nuestro trabajo y las soluciones que ofrecemos.</p>
           </div>
         </div>
-        
-        <div class="row justify-content-center">
-          <!-- Video -->
-          <div class="col-lg-8 col-md-10 mb-4">
-            <div class="gallery-item gallery-video wow fadeInUp" data-wow-delay=".1s">
-              <div class="video-wrapper">
-                <video controls preload="metadata" poster="assets/img/gallery/videos/video1-poster.jpg">
-                  <source src="assets/img/gallery/videos/video1.mp4" type="video/mp4">
-                  Tu navegador no soporta la reproducción de videos.
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Sección para fotos futuras -->
-        <div class="row gallery-photos">
-          <!-- Aquí se pueden agregar más fotos en el futuro -->
-          <!-- Ejemplo de estructura para fotos:
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="gallery-item gallery-photo wow fadeInUp" data-wow-delay=".2s">
-              <img src="assets/img/gallery/foto1.jpg" alt="Descripción" class="img-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <!-- Carrusel -->
+            <div class="gallery-carousel-wrapper">
+
+              <button class="gallery-arrow gallery-arrow-prev" onclick="galleryMove(-1)" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                  <polyline points="15 18 9 12 15 6"/>
+                </svg>
+              </button>
+
+              <div class="gallery-track-container">
+                <div class="gallery-track" id="galleryTrack">
+
+
+                  <div class="gallery-slide">
+                    <img src="assets/img/gallery/videos/photo-4.jpeg" alt="Trabajo del Dr. Armando Frutos">
+                  </div>
+                  <div class="gallery-slide">
+                    <img src="assets/img/gallery/videos/photo-3.jpeg" alt="Trabajo del Dr. Armando Frutos">
+                  </div>
+                  <div class="gallery-slide">
+                    <video controls preload="metadata" poster="assets/img/gallery/videos/video1-poster.jpg">
+                      <source src="assets/img/gallery/videos/video1.mp4" type="video/mp4">
+                      Tu navegador no soporta la reproducción de videos.
+                    </video>
+                  </div>
+                  <div class="gallery-slide">
+                    <video controls preload="metadata" poster="assets/img/gallery/videos/video2-poster.jpg">
+                      <source src="assets/img/gallery/videos/video-2.mp4" type="video/mp4">
+                      Tu navegador no soporta la reproducción de videos.
+                    </video>
+                  </div>
+                  <div class="gallery-slide">
+                    <video controls preload="metadata" poster="assets/img/gallery/videos/video2-poster.jpg">
+                      <source src="assets/img/gallery/videos/video-3.mp4" type="video/mp4">
+                      Tu navegador no soporta la reproducción de videos.
+                    </video>
+                  </div>
+                  <div class="gallery-slide">
+                    <img src="assets/img/gallery/videos/photo-2.jpeg" alt="Trabajo del Dr. Armando Frutos">
+                  </div>
+                  <div class="gallery-slide">
+                    <img src="assets/img/gallery/videos/photo-1.jpeg" alt="Trabajo del Dr. Armando Frutos">
+                  </div>
+                  <div class="gallery-slide">
+                    <video controls preload="metadata" poster="assets/img/gallery/videos/video2-poster.jpg">
+                      <source src="assets/img/gallery/videos/video-4.mp4" type="video/mp4">
+                      Tu navegador no soporta la reproducción de videos.
+                    </video>
+                  </div>
+                </div>
+              </div>
+
+              <button class="gallery-arrow gallery-arrow-next" onclick="galleryMove(1)" aria-label="Siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                  <polyline points="9 18 15 12 9 6"/>
+                </svg>
+              </button>
+
             </div>
+            <!-- Fin carrusel -->
+
+            <div class="gallery-dots" id="galleryDots"></div>
+            <div class="gallery-counter" id="galleryCounter"></div>
+
           </div>
-          -->
         </div>
       </div>
     </section>
-    <!-- ========================= gallery section end ========================= -->
+<!-- ========================= gallery section end ========================= -->
 
     <!-- ========================= contact section start ========================= -->
     <section id="contact" class="contact-section">
